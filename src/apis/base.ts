@@ -44,9 +44,6 @@ class Request {
         })
     })
   }
-  get(config: HYRequestConfig) {
-    return this.request({ ...config, methods: 'GET' })
-  }
 }
 
 export default Request

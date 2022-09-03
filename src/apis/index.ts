@@ -6,11 +6,11 @@ const request = new Request({
   timeout: TIME_OUT,
   interceptors: {
     requestInterceptor: (config) => {
-      const token = 'xxx'
-      if (token){
-        config.headers.Authorization = `Bearer ${token}`
-      }
-      console.log('requestInterceptor', config)
+      // const token = 'xxx'
+      // if (token){
+      //   config.headers.Authorization = `Bearer ${token}`
+      // }
+      // console.log('requestInterceptor', config)
       return config
     },
     requestInterceptorCatch: (err) => {
